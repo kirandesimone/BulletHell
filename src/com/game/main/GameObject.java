@@ -18,6 +18,7 @@ public abstract class GameObject {
 
     public abstract void tick();
     public abstract void render(Graphics graphics);
+
     // for collision
     public abstract Rectangle getBounds();
 

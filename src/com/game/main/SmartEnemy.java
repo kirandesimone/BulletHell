@@ -4,7 +4,7 @@ import java.awt.*;
 
 public class SmartEnemy extends GameObject{
 
-    Handler handler;
+    private Handler handler;
     private GameObject player;
 
     public SmartEnemy(float x, float y, ID id, Handler handler) {
@@ -12,12 +12,14 @@ public class SmartEnemy extends GameObject{
         this.handler = handler;
 
         for(int i = 0; i < handler.objects.size(); i++) {
+
             if(handler.objects.get(i).getId() == ID.Player) {
-                player = handler.objects.get(i);
+                this.player = handler.objects.get(i);
             }
         }
 
     }
+
 
     @Override
     public void tick() {

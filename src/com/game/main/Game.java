@@ -20,20 +20,17 @@ public class Game extends Canvas implements Runnable {
 
     public Game() {
         handler = new Handler(this);
+
         hud = new HUD();
-        shop = new Shop(handler, hud);
+        shop = new Shop(handler, hud, this);
         menu = new Menu(this, handler, hud);
         this.addKeyListener(new PlayerController(handler));
         this.addMouseListener(menu);
+        this.addMouseListener(shop);
 
-        spawn = new Spawn(handler, hud);
+        spawn = new Spawn(handler, hud, this);
 
         new Window(WIDTH, HEIGHT, "BulletHell!", this);
-
-        if(gameState == STATE.Game) {
-           // handler.addGameObject(new Player(100,100, ID.Player, handler));
-           // handler.addGameObject(new Boss((Game.WIDTH / 2), -100, ID.Boss, handler));
-        }
 
     }
 
@@ -73,7 +70,7 @@ public class Game extends Canvas implements Runnable {
 
     private void tick() {
         handler.tick();
-        if(gameState == STATE.Game) {
+        if(gameState == STATE.Game || gameState == STATE.BossMode) {
             hud.tick();
             spawn.tick();
         } else if(gameState == STATE.Menu || gameState == STATE.GameOver){
@@ -86,6 +83,10 @@ public class Game extends Canvas implements Runnable {
             handler.clearRound();
         }
 
+        if(hud.getLevel() % 10 == 9) {
+            handler.clearRound();
+            gameState = STATE.Shop;
+        }
     }
 
     private void render() {
@@ -101,7 +102,7 @@ public class Game extends Canvas implements Runnable {
         graphics.fillRect(0, 0, WIDTH, HEIGHT);
 
         handler.render(graphics);
-        if(gameState == STATE.Game) {
+        if(gameState == STATE.Game || gameState == STATE.BossMode) {
             hud.render(graphics);
             handler.render(graphics);
         } else if(gameState == STATE.Menu || gameState == STATE.Options || gameState == STATE.GameOver) {
@@ -110,8 +111,6 @@ public class Game extends Canvas implements Runnable {
         } else if(gameState == STATE.Shop) {
             shop.render(graphics);
         }
-
-
 
         graphics.dispose();
         bs.show();
