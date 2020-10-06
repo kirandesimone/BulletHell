@@ -25,23 +25,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27143487-84f6-42f7-83ae-5f507877abf9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game/com/game/main/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/com/game/main/Game.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game/com/game/main/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/com/game/main/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game/com/game/main/Handler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/com/game/main/Handler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game/com/game/main/Menu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/com/game/main/Menu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game/com/game/main/STATE.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/com/game/main/STATE.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game/com/game/main/SmartEnemy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/com/game/main/SmartEnemy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Game/com/game/main/Spawn.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Game/com/game/main/Spawn.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/main/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/main/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/main/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/main/GameObject.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/game/main/HUD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/main/HUD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/main/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/main/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/main/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/main/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/main/STATE.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/main/STATE.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/main/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/main/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/game/main/SmartEnemy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/main/SmartEnemy.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/game/main/Spawn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/game/main/Spawn.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
