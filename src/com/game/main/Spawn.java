@@ -24,7 +24,7 @@ public class Spawn {
     public void tick() {
         scoreKeep++;
 
-        if(scoreKeep >=  500) {
+        if(scoreKeep >=  200) {
             scoreKeep = 0;
 
             if(hud.getLevel() % 10 >= 1 && hud.getLevel() % 10 < 9) {

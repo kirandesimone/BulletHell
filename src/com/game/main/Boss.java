@@ -35,7 +35,7 @@ public class Boss extends GameObject {
             }
             int spawn = random.nextInt(10);
             if(spawn == 0) {
-                handler.addGameObject(new BasicProjectile((int)x + 48,(int) y + 48, ID.BasicProjectile, handler));
+                handler.addGameObject(new EnemyProjectile((int)x + 48,(int) y + 48, ID.EnemyProjectile, handler));
             }
         }
 

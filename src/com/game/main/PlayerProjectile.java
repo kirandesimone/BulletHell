@@ -1,18 +1,16 @@
 package com.game.main;
 
 import java.awt.*;
-import java.util.Random;
 
-public class BasicProjectile extends GameObject {
+public class PlayerProjectile extends GameObject {
 
     Handler handler;
-    Random random = new Random();
 
-    public BasicProjectile(float x, float y, ID id, Handler handler) {
+    public PlayerProjectile(float x, float y, ID id, Handler handler, int mouseX, int mouseY) {
         super(x, y, id);
         this.handler = handler;
-        speedX = (random.nextInt(5 - -5) + -5);
-        speedY = 5;
+        speedX = mouseX / x;
+        speedY = mouseY / 15;
     }
 
     @Override
@@ -37,4 +35,3 @@ public class BasicProjectile extends GameObject {
         return new Rectangle((int) x,(int) y, 16, 16);
     }
 }
-

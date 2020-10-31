@@ -21,11 +21,15 @@ public class Menu extends MouseAdapter {
         int my = mouseEvent.getY();
 
         if(game.gameState == STATE.Menu) {
+
             // PLAY
             if (isMouseOver(mx, my, 210, 150, 200, 64)) {
                 game.gameState = STATE.Game;
-                handler.addGameObject(new Player(100, 100, ID.Player, handler));
+                Player player = new Player(100, 100, ID.Player, handler, game);
+                handler.addGameObject(player);
+                game.addMouseListener(player);
                 handler.loadEnemies(handler);
+
             }
 
             // OPTIONS
